@@ -212,7 +212,7 @@ def read_from_csv(csv_dir):
 """
 Main code section
 """
-
+"""
 list_people = []
 
 list_bb = []
@@ -245,7 +245,7 @@ csv_dir = '/Users/thammingkeat/PycharmProjects/Drive_1_athlete.csv'
 #For reading all the json files in a folder
 #Returns a folder of people - consisting of list of people from each image
 folder_people,folder_bb, list_largest_people = read_json(json_dir)
-
+"""
 # for i in range(len(data['people'])):
 #
 #     body_part = data['people'][i]['body_parts']
@@ -322,10 +322,10 @@ folder_people,folder_bb, list_largest_people = read_json(json_dir)
     Each joint would have to minus the nose's coordinate to become relative
     
 """
-
+"""
 list_largest_people = adjust_coordinates(list_largest_people)
 
 write_to_csv(csv_dir, list_largest_people)
 csv_data = read_from_csv(csv_dir)
-
+"""
 
